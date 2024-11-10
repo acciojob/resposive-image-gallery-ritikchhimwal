@@ -1,1 +1,36 @@
 /*  your css code here. If applicable */
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Container styling */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        /* Image styling */
+        .gallery img {
+            max-width: 25vw;
+            margin: 10px;
+            border: 3px solid #000;
+            box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive behavior for smaller screens */
+        @media (max-width: 768px) {
+            .gallery img {
+                max-width: 45vw;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery img {
+                max-width: 90vw;
+            }
+        }
